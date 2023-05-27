@@ -12,6 +12,9 @@ export function MainNav() {
   const pathname = usePathname()
 
   return (
+    // このの要素は基本的には非表示(hidden)で、
+    // しかし中間サイズのデバイス以上の場合にはフレックスボックスとして表示され(md:flex)、
+    // その右マージンは1remとなります(mr-4)。
     <div className="mr-4 hidden md:flex">
       <Link href="/" className="mr-6 flex items-center space-x-2">
         <Icons.logo className="h-6 w-6" />
